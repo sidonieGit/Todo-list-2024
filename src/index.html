@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Liste des tâches à faire</title>
+	<!-- Utilisation d'une seule version de Font Awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+	<section class="container1">
+		<div class="todo-app">
+			<h2>To-Do List <img src="../img/logo-todo-list.png" alt="logo todo list"></h2>
+
+			<div class="input-group flex-nowrap">
+				<span class="input-group-text" id="addon-wrapping">+</span>
+				<input type="text" id="input-box" class="form-control" placeholder="Ajoutez une tâche" aria-label="nexTache"
+					aria-describedby="addon-wrapping">
+				<button class="btn btn-outline-primary" type="button" id="button-addon2">Ajouter</button>
+			</div>
+
+			<div class="btn-group mt-3">
+				<button class="btn btn-primary active" aria-current="page" id="all-tasks-btn">Toutes</button>
+				<button class="btn btn-primary" id="todo-tasks-btn">A faire</button>
+				<button class="btn btn-primary" id="completed-tasks-btn">Terminées</button>
+			</div>
+
+			<ul id="list-container1">
+			</ul>
+		</div>
+
+		<div class="container-footer d-flex justify-item-center align-items-center">
+			<div class="col-md-7 col-lg-8">
+				<p>
+					&copy; Copyright
+					<script>
+						document.write(new Date().getFullYear());
+					</script>
+					. Made by
+					<a rel="noreferrer" target="_blank" href="#" style="text-decoration: none">
+						<strong class="auteur">Sidonie Djuissi Fohouo</strong>
+					</a>
+				</p>
+			</div>
+
+			<div class="col-md-5 col-lg-4">
+				<div class="text-center text-md-right">
+					<ul class="list-unstyled list-inline">
+						<li class="list-inline-item">
+							<a href="" target="_blank" class="button-floating btn-sm text-white blinking-button"
+								style="font-size: 23px">
+								<i class="fa fa-linkedin"></i>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="https://github.com/hhh" target="_blank" class="button-floating btn-sm text-white blinking-button"
+								style="font-size: 23px">
+								<i class="fa fa-github"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+	<script src="../js/script1.js"></script>
+</body>
+
+</html>

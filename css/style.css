@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --color-white: #ffffff;
+  --color-primary: #8338ec;
+  --color-gray: #f3f4f6;
+  --color-secondary: #fb5607;
+  --color-black: #222222;
+  --color-gray-dark: #b9b9b9;
+  --color-gray-danger: #ff006e;
+  --font-base: "Inter";
+  --font-header: "Poppins";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+body {
+  /* background-color: var(--color-body); */
+  color: var(--color-black);
+  font-family: var(--font-base);
+}
+.container1 {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #153677, #4e085f);
+  padding: 10px;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  background: #fff;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+
+.todo-app h2 {
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.todo-app h2 img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 0px 0px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(img/);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+/* https://www.youtube.com/watch?v=G0jO8kUrg-I 13:13*/
+ul li.checked {
+  color: var(--color-gray-dark);
+  text-decoration: line-through;
+}
+
+.custom-checkbox {
+  margin-right: 5px !important; /* Ajustez cette valeur selon vos besoins */
+}
+
+/* footer */
+
+/* Footer */
+.container-footer {
+  position: fixed; /* Pour que le footer reste en bas de page */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-black);
+  color: var(--color-primary);
+  font-family: var(--font-base);
+  padding: 20px;
+  text-align: center; /* Centrage du contenu du footer */
+}
+.auteur {
+  color: var(--color-gray-dark);
+  letter-spacing: 1em;
+}
+
+.blinking-button {
+  animation: blinking 1s infinite;
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
